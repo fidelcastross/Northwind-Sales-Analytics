@@ -1,5 +1,14 @@
 # SQL_Project
 
+## Project Overview
+This project uses PostgreSQL and the Northwind Traders dataset to analyze sales revenue, product performance, customer behavior, and monthly revenue trends. It demonstrates practical SQL skills through business-focused questions and data analysis.
+
+## Tools and Technologies
+- Database: PostgreSQL 18
+- SQL Client: pgAdmin 4
+- Dataset: Northwind Traders
+- Platform: GitHub
+
 ## SQL Business Analysis
 
 ### 1. Total Sales Revenue
