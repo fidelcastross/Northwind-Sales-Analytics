@@ -52,6 +52,16 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 - Save-a-lot Markets placed the most orders among the top 10 customers, with 31 orders.
 - Order frequency and total revenue do not always have the same ranking.
 
+### Business Recommendations
+
+- Monitor monthly revenue trends while accounting for incomplete periods.
+- Evaluate product revenue alongside units sold and discounts.
+- Focus customer-retention efforts on high-revenue accounts.
+- Use customer segmentation to prioritize retention and targeted marketing.
+- Analyze product costs before drawing conclusions about profitability.
+
+*Note: Revenue is calculated after line-item discounts. The currency is unspecified in the dataset, and revenue is not the same as profit.*
+
 ### 5. Customer Segmentation
 
 **Business Question:** How can customers be classified based on their revenue and order frequency?
@@ -67,15 +77,6 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: The segmentation thresholds are illustrative business rules created for this analysis.*
 
-### Business Recommendations
-
-- Monitor monthly revenue trends while accounting for incomplete periods.
-- Evaluate product revenue alongside units sold and discounts.
-- Focus customer-retention efforts on high-revenue accounts.
-- Use customer segmentation to prioritize retention and targeted marketing.
-- Analyze product costs before drawing conclusions about profitability.
-
-*Note: Revenue is calculated after line-item discounts. The currency is unspecified in the dataset, and revenue is not the same as profit.*
 
 ### 6. Order Shipping Delay Analysis
 
