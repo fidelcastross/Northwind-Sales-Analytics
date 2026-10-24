@@ -52,11 +52,27 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 - Save-a-lot Markets placed the most orders among the top 10 customers, with 31 orders.
 - Order frequency and total revenue do not always have the same ranking.
 
+### 5. Customer Segmentation
+
+**Business Question:** How can customers be classified based on their revenue and order frequency?
+
+**SQL Concepts:** CTE (`WITH`), `JOIN`, `COUNT(DISTINCT)`, `SUM()`, `CASE WHEN`, `GROUP BY`.
+
+**Key Findings:**
+- Classified customers into High Value, Regular, and Occasional segments using total revenue and order frequency.
+- QUICK-Stop was the highest-revenue customer, generating 110,277.31 across 28 orders.
+- Used a Common Table Expression (CTE) to calculate customer metrics and `CASE WHEN` to apply segmentation rules.
+
+**Business Application:** Customer segmentation can help businesses prioritize customer retention, identify valuable accounts, and plan targeted marketing campaigns.
+
+*Note: The segmentation thresholds are illustrative business rules created for this analysis.*
+
 ### Business Recommendations
 
 - Monitor monthly revenue trends while accounting for incomplete periods.
 - Evaluate product revenue alongside units sold and discounts.
 - Focus customer-retention efforts on high-revenue accounts.
+- Use customer segmentation to prioritize retention and targeted marketing.
 - Analyze product costs before drawing conclusions about profitability.
 
 *Note: Revenue is calculated after line-item discounts. The currency is unspecified in the dataset, and revenue is not the same as profit.*
