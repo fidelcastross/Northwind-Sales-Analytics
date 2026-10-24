@@ -116,4 +116,23 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: A delay is defined as more than 7 days between order date and shipping date. The threshold is illustrative, and May 2015 is an incomplete month in the dataset.*
 
+### 8. Order Value Analysis
+
+**Business Question:** What is the value of individual orders, and what is the average order value?
+
+**SQL Concepts:** `JOIN`, `SUM()`, `COUNT()`, `AVG()`, `MAX()`, `MIN()`, `GROUP BY`, Common Table Expressions (CTEs), and `ORDER BY`.
+
+**Key Findings:**
+- Analyzed 830 orders.
+- Average order value was 1,525.05 after line-item discounts.
+- The highest order value was 16,387.50.
+- The lowest order value was 12.50.
+- Order values varied substantially across the dataset.
+
+**Business Recommendations:**
+- Identify high-value orders and investigate which products and customers contribute to them.
+- Compare order values across customers to identify opportunities for customer retention and cross-selling.
+- Evaluate order value alongside product costs before making profitability decisions.
+
+*Note: Revenue is calculated after line-item discounts. Freight charges and product costs are excluded, and the dataset's currency is unspecified.*
 
