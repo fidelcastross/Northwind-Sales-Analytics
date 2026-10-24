@@ -67,6 +67,16 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: The segmentation thresholds are illustrative business rules created for this analysis.*
 
+### Business Recommendations
+
+- Monitor monthly revenue trends while accounting for incomplete periods.
+- Evaluate product revenue alongside units sold and discounts.
+- Focus customer-retention efforts on high-revenue accounts.
+- Use customer segmentation to prioritize retention and targeted marketing.
+- Analyze product costs before drawing conclusions about profitability.
+
+*Note: Revenue is calculated after line-item discounts. The currency is unspecified in the dataset, and revenue is not the same as profit.*
+
 ### 6. Order Shipping Delay Analysis
 
 **Business Question:** How efficiently are customer orders being shipped?
@@ -86,12 +96,23 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: The 7-day threshold is used for analytical purposes and is not a confirmed service-level agreement. Shipping time measures the period between order placement and shipment, not customer delivery time.*
 
-### Business Recommendations
+### 7. Monthly Shipping Performance Analysis
 
-- Monitor monthly revenue trends while accounting for incomplete periods.
-- Evaluate product revenue alongside units sold and discounts.
-- Focus customer-retention efforts on high-revenue accounts.
-- Use customer segmentation to prioritize retention and targeted marketing.
-- Analyze product costs before drawing conclusions about profitability.
+**Business Question:** How does shipping performance vary by month?
 
-*Note: Revenue is calculated after line-item discounts. The currency is unspecified in the dataset, and revenue is not the same as profit.*
+**SQL Concepts:** `DATE_TRUNC()`, `CASE WHEN`, conditional aggregation, `COUNT()`, `FILTER`, `GROUP BY`, `ROUND()`, and window/aggregate calculations.
+
+**Key Findings:**
+- October 2013 had the highest within-7-day shipping rate at 73.08%.
+- March 2015 had the highest number of delayed orders, with 38.
+- December 2014 recorded 25 delayed orders out of 48 total orders.
+- April and May 2015 included orders without recorded shipping dates, which affects comparisons.
+
+**Business Recommendations:**
+- Investigate the causes of monthly increases in delayed shipments.
+- Monitor missing shipping dates and validate shipment records.
+- Compare complete months and account for differences in order volume before drawing conclusions.
+
+*Note: A delay is defined as more than 7 days between order date and shipping date. The threshold is illustrative, and May 2015 is an incomplete month in the dataset.*
+
+
