@@ -67,6 +67,25 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: The segmentation thresholds are illustrative business rules created for this analysis.*
 
+### 6. Order Shipping Delay Analysis
+
+**Business Question:** How efficiently are customer orders being shipped?
+
+**SQL Concepts:** `CASE WHEN`, date subtraction, `COUNT()`, `GROUP BY`, window functions, and percentage calculations.
+
+**Key Findings:**
+- 473 orders (56.99%) were shipped within 7 days.
+- 336 orders (40.48%) took more than 7 days to ship.
+- 21 orders (2.53%) had no recorded shipping date.
+- A significant proportion of orders exceeded the illustrative 7-day shipping threshold.
+
+**Business Recommendations:**
+- Investigate the reasons for orders taking more than 7 days to ship.
+- Review orders with missing shipping dates to determine whether they remain unshipped or have incomplete records.
+- Monitor shipping performance over time to identify potential operational improvements.
+
+*Note: The 7-day threshold is used for analytical purposes and is not a confirmed service-level agreement. Shipping time measures the period between order placement and shipment, not customer delivery time.*
+
 ### Business Recommendations
 
 - Monitor monthly revenue trends while accounting for incomplete periods.
