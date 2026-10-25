@@ -136,3 +136,22 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: Revenue is calculated after line-item discounts. Freight charges and product costs are excluded, and the dataset's currency is unspecified.*
 
+### 9. Product Category Revenue Contribution
+
+**Business Question:** Which product categories contribute the most to total sales revenue?
+
+**SQL Concepts:** `JOIN`, Common Table Expressions (CTEs), `SUM()`, window functions, percentage calculations, `ROUND()`, and `ORDER BY`.
+
+**Key Findings:**
+- Beverages generated 267,868.18, contributing 21.16% of total revenue.
+- Dairy Products generated 234,507.29, contributing 18.53%.
+- Beverages and Dairy Products together accounted for 39.69% of total revenue.
+- Grains & Cereals had the lowest revenue contribution at 7.56%.
+
+**Business Recommendations:**
+- Monitor the performance of high-contribution categories.
+- Investigate growth opportunities in categories with lower revenue contributions.
+- Evaluate category revenue alongside product costs, discounts, and sales volume before making investment decisions.
+
+*Note: Revenue is calculated after line-item discounts. The dataset's currency is unspecified, and revenue is not the same as profit.*
+
