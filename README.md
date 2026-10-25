@@ -155,3 +155,23 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: Revenue is calculated after line-item discounts. The dataset's currency is unspecified, and revenue is not the same as profit.*
 
+### 10. Quarterly Sales Trend Analysis
+
+**Business Question:** How does sales revenue change across quarters, and which quarters show the strongest growth?
+
+**SQL Concepts:** Common Table Expressions (CTEs), `EXTRACT()`, `SUM()`, `LAG()`, `NULLIF()`, percentage calculations, and `ORDER BY`.
+
+**Key Findings:**
+- Q1 2015 recorded the highest reported quarterly revenue of 298,491.55.
+- Revenue increased throughout 2014, reaching 181,681.46 in Q4.
+- Q1 2015 revenue increased by 64.29% compared with Q4 2014.
+- Q2 2015 revenue was 52.38% lower than Q1 2015, but Q2 data is incomplete.
+
+**Business Recommendations:**
+- Investigate the factors behind the strong reported revenue in Q1 2015.
+- Compare equivalent periods across years to identify potential seasonal patterns.
+- Use complete quarters when evaluating performance and avoid interpreting incomplete-quarter results as confirmed declines.
+
+*Note: Revenue is calculated after line-item discounts. The dataset's currency is unspecified, and revenue is not the same as profit. The first and last quarters in the dataset may be partial periods.*
+
+
