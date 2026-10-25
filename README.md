@@ -174,4 +174,25 @@ This project uses PostgreSQL and the Northwind Traders dataset to analyze sales 
 
 *Note: Revenue is calculated after line-item discounts. The dataset's currency is unspecified, and revenue is not the same as profit. The first and last quarters in the dataset may be partial periods.*
 
+### 11. Discount Analysis
+
+**Business Question:** How do different discount levels relate to sales volume, discount value, and net revenue?
+
+**SQL Concepts:** `CASE WHEN`, `SUM()`, `COUNT()`, conditional grouping, aggregate functions, and `ORDER BY`.
+
+**Key Findings:**
+- Order lines without discounts generated 750,698.61 in net revenue.
+- The above-15% discount category recorded the highest discount value at 55,274.80.
+- The above-15% category accounted for 8,700 units sold, the highest unit volume among discounted categories.
+- The 0%–5% category generated 147,905.53 in net revenue after discounts.
+
+**Business Recommendations:**
+- Monitor discount value by category to identify where discount spending is concentrated.
+- Evaluate discount policies using profit margins, not revenue alone.
+- Compare similar products and periods before concluding that a higher discount improves sales.
+- Investigate whether large discounts are necessary for products that already sell well without them.
+
+*Note: Revenue is calculated after line-item discounts. The dataset's currency is unspecified. The analysis shows associations between discount levels and sales outcomes; it does not establish causation or profitability.*
+
+
 
