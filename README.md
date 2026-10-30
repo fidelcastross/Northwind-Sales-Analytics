@@ -1,4 +1,4 @@
-# SQL_Project
+# Northwind Traders Sales Analysis | SQL & Power BI Portfolio
 
 ## Project Overview
 This project uses PostgreSQL and the Northwind Traders dataset to analyze sales revenue, product performance, customer behavior, and monthly revenue trends. It demonstrates practical SQL skills through business-focused questions and data analysis.
